@@ -1,0 +1,20 @@
+
+
+
+mybatis-plus:
+  #config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath*:mapper/pstudio/*.xml
+  #type-aliases-package: com.baomidou.mybatisplus.samples.quickstart.entity
+  #type-aliases-super-type: java.lang.Object
+  #type-handlers-package: com.baomidou.mybatisplus.samples.quickstart.hanlder
+  #type-enums-package: com.baomidou.mybatisplus.samples.quickstart.enums
+  check-config-location: true
+  executor-type: simple
+  #configuration-properties: classpath:mybatis/config.properties
+  configuration:
+    map-underscore-to-camel-case: true
+    auto-mapping-unknown-column-behavior: warning
+    cache-enabled: true
+    call-setters-on-nulls: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-prefix: zhongshaohongka
